@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: teamcalendar
+    volumes:
+      - ./db_data:/var/lib/mysql
+    ports:
+      - 8080:3306
+
+  nestjs:
+    build:
+      context: ./teamCalendar
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+    ports:
+      - "3001:3001"
+
+  nextjs:
+    build:
+      context: ./team-calendar-front
+      dockerfile: Dockerfile
+    environment:
+      NEXT_PUBLIC_API_BASE_URL: "http://localhost:3001"
+    ports:
+      - "3000:3000"
+  
+
