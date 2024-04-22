@@ -1,5 +1,5 @@
 import store from "@/shared/redux/store";
-import { useState } from "react";
+import {useState} from "react";
 
 export function Dark(actionfunction) {
     const theme = store.getState()

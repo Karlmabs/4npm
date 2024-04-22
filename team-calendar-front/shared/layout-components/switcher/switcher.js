@@ -1,8 +1,7 @@
-
-import React, { Fragment, useEffect } from 'react'
-import { Helmet, HelmetProvider } from 'react-helmet-async'
-import { connect } from 'react-redux';
-import { ThemeChanger } from '@/shared/redux/action';
+import React, {Fragment, useEffect} from 'react'
+import {Helmet, HelmetProvider} from 'react-helmet-async'
+import {connect} from 'react-redux';
+import {ThemeChanger} from '@/shared/redux/action';
 import Themeprimarycolor, * as switcherdata from '../../data/switcherdata/switcherdata';
 
 const Switcher = ({ local_varaiable, ThemeChanger }) => {

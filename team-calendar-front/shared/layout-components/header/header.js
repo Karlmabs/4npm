@@ -1,11 +1,11 @@
 import Link from "next/link";
-import React, { Fragment, useEffect, useState } from "react";
-import { ThemeChanger } from "../../redux/action";
-import { connect } from "react-redux";
+import React, {Fragment, useEffect, useState} from "react";
+import {ThemeChanger} from "../../redux/action";
+import {connect} from "react-redux";
 import store from "@/shared/redux/store";
 import Modalsearch from "../modal-search/modalsearch";
-import { basePath } from "@/next.config";
-import { useAuth } from "@/shared/context/AuthContext";
+import {basePath} from "@/next.config";
+import {useAuth} from "@/shared/context/AuthContext";
 
 const Header = ({ local_varaiable, ThemeChanger }) => {
   const [passwordshow1, setpasswordshow1] = useState(false);

@@ -1,7 +1,7 @@
 import store from '@/shared/redux/store'
-import React, { Fragment } from 'react'
-import { Helmet, HelmetProvider } from 'react-helmet-async'
-import { Provider } from 'react-redux'
+import React, {Fragment} from 'react'
+import {Helmet, HelmetProvider} from 'react-helmet-async'
+import {Provider} from 'react-redux'
 import Switcher from '../switcher/switcher'
 
 const Authenticationlayout = ({children}) => {

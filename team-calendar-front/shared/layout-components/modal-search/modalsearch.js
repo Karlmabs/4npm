@@ -1,6 +1,5 @@
-
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 import MenuItems from "../sidebar/nav";
 
 const Modalsearch = () => {

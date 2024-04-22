@@ -1,9 +1,9 @@
-import { basePath } from "@/next.config";
+import {basePath} from "@/next.config";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import React, { Fragment, useEffect, useState } from "react";
-import { login } from "@/shared/services/AuthApis";
-import { useAuth } from "@/shared/context/AuthContext";
+import {useRouter} from "next/router";
+import React, {Fragment, useEffect, useState} from "react";
+import {login} from "@/shared/services/AuthApis";
+import {useAuth} from "@/shared/context/AuthContext";
 
 const Firebaselogin = () => {
   useEffect(() => {

@@ -1,7 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-import colors from "tailwindcss/colors";
-
 const colors = require("tailwindcss/colors");
 const plugin = require("tailwindcss/plugin");
 

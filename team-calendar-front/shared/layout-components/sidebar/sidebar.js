@@ -1,11 +1,10 @@
-
-import React, { Fragment, useState, useEffect } from "react";
-import { connect } from "react-redux";
+import React, {Fragment, useEffect, useState} from "react";
+import {connect} from "react-redux";
 import MenuItems from "./nav";
-import { ThemeChanger } from "../../redux/action";
-import { useRouter } from "next/router";
+import {ThemeChanger} from "../../redux/action";
+import {useRouter} from "next/router";
 import Link from "next/link";
-import { basePath } from "@/next.config";
+import {basePath} from "@/next.config";
 import store from "@/shared/redux/store";
 import SimpleBar from 'simplebar-react';
 

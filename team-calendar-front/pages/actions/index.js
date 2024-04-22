@@ -1,10 +1,9 @@
 import Pageheader from "@/shared/layout-components/page-header/pageheader";
 import Seo from "@/shared/layout-components/seo/seo";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import React, { Fragment, useEffect, useState } from "react";
-import { deleteUser, getAllUsers } from "@/shared/services/userApis";
-import { deleteAction, getAllActions } from "@/shared/services/actionApis";
+import {useRouter} from "next/router";
+import React, {Fragment, useEffect, useState} from "react";
+import {deleteAction, getAllActions} from "@/shared/services/actionApis";
 
 const Index = () => {
   const [ListData, setListData] = useState([]);

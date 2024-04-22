@@ -1,8 +1,8 @@
-import { auth } from '@/shared/firebase/firebaseapi';
+import {auth} from '@/shared/firebase/firebaseapi';
 import Seo from '@/shared/layout-components/seo/seo'
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-import React, { Fragment, useEffect, useState } from 'react'
+import {useRouter} from 'next/router';
+import React, {Fragment, useEffect, useState} from 'react'
 
 const Signup = () => {
 

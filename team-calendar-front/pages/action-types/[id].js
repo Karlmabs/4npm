@@ -1,18 +1,12 @@
-import { Addproduct } from "@/shared/data/ecommerce/addproductsdata";
 import Pageheader from "@/shared/layout-components/page-header/pageheader";
 import Seo from "@/shared/layout-components/seo/seo";
 import dynamic from "next/dynamic";
-import React, { Fragment, useEffect, useState } from "react";
-import { registerPlugin } from "react-filepond";
+import React, {Fragment, useEffect, useState} from "react";
+import {registerPlugin} from "react-filepond";
 import FilePondPluginImageExifOrientation from "filepond-plugin-image-exif-orientation";
 import FilePondPluginImagePreview from "filepond-plugin-image-preview";
-
-import { register } from "@/shared/services/AuthApis";
-import { useRouter } from "next/router";
-import {
-  editActionType,
-  getActionType,
-} from "@/shared/services/actionTypeApis";
+import {useRouter} from "next/router";
+import {editActionType, getActionType,} from "@/shared/services/actionTypeApis";
 
 const Select = dynamic(() => import("react-select"), { ssr: false });
 const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });

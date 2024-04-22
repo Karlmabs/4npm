@@ -1,16 +1,13 @@
 import Pageheader from "@/shared/layout-components/page-header/pageheader";
 import Seo from "@/shared/layout-components/seo/seo";
-import React, { Fragment, useEffect, useState } from "react";
+import React, {Fragment, useEffect, useState} from "react";
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
-import interactionPlugin, { Draggable } from "@fullcalendar/interaction";
-import { createAction, getAllActions } from "@/shared/services/actionApis";
-import {
-  createActionType,
-  deleteActionType,
-} from "@/shared/services/actionTypeApis";
-import { useAuth } from "@/shared/context/AuthContext";
+import interactionPlugin from "@fullcalendar/interaction";
+import {createAction, getAllActions} from "@/shared/services/actionApis";
+import {createActionType,} from "@/shared/services/actionTypeApis";
+import {useAuth} from "@/shared/context/AuthContext";
 
 const Fullcalendar = () => {
   let eventGuid = 0;

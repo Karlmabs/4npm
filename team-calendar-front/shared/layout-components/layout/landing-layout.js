@@ -1,6 +1,6 @@
 import store from '@/shared/redux/store';
-import React, { Fragment, useEffect } from 'react';
-import { Provider } from 'react-redux';
+import React, {Fragment, useEffect} from 'react';
+import {Provider} from 'react-redux';
 import Landingswitcher from '../switcher/landingswitcher';
 
 const Landinglayout = ({children}) => {

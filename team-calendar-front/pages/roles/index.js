@@ -1,9 +1,10 @@
 import Pageheader from "@/shared/layout-components/page-header/pageheader";
 import Seo from "@/shared/layout-components/seo/seo";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import React, { Fragment, useEffect, useState } from "react";
-import { deleteRole, getAllRoles } from "@/shared/services/roleApis";
+import {useRouter} from "next/router";
+import React, {Fragment, useEffect, useState} from "react";
+import {deleteRole, getAllRoles} from "@/shared/services/roleApis";
+
 const Index = () => {
   const [ListData, setListData] = useState([]);
 

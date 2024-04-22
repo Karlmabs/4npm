@@ -89,9 +89,10 @@ export const Categorydata=[
     {value:"In Stock", label:"In Stock"},
     {value:"Out Of Stock", label:"Out Of Stock"}
     ];
-    
+
 import dynamic from "next/dynamic";
-import { Component } from "react";
+import {Component} from "react";
+
 const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
 const defaultContent = `

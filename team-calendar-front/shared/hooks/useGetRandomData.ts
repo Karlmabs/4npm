@@ -1,19 +1,18 @@
 "use client";
 
 import {
-    _getPersonNameRd,
     _getAvatarRd,
     _getImgHightQualityRd,
     _getImgRd,
-    _getTagNameRd,
+    _getPersonNameRd,
     _getTitleRd,
+    aTitles,
     avatarImgs,
     featuredImgs,
     imgHigtQualitys,
-    aTitles,
-    personNames,
-    nftsImgs,
     nftsAbstracts,
+    nftsImgs,
+    personNames,
 } from "@/lib/contains/fakeData";
 import {StaticImageData} from "next/image";
 import {useEffect, useId, useState} from "react";

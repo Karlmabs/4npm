@@ -1,6 +1,6 @@
 import Seo from '@/shared/layout-components/seo/seo'
 import Link from 'next/link'
-import React, { Fragment } from 'react'
+import React, {Fragment} from 'react'
 
 const Error401 = () => {
   return (

@@ -1,10 +1,8 @@
-
-import React, { useEffect } from "react";
-import { connect } from "react-redux";
-import { ThemeChanger } from "@/shared/redux/action";
+import React, {useEffect} from "react";
+import {connect} from "react-redux";
+import {ThemeChanger} from "@/shared/redux/action";
 import Themeprimarycolor, * as landingswitcherdata from "../../data/switcherdata/landingswitcherdata";
-import Link from "next/link";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import {Helmet, HelmetProvider} from "react-helmet-async";
 import store from "@/shared/redux/store";
 
 const Landingswitcher = ({ local_varaiable, ThemeChanger }) => {

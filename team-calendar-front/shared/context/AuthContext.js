@@ -1,11 +1,4 @@
-import React, {
-  createContext,
-  useContext,
-  useState,
-  ReactNode,
-  useEffect,
-} from "react";
-import useSessionStorage from "../hooks/useSessionStorage";
+import React, {createContext, useContext, useEffect, useState,} from "react";
 
 const AuthContext = createContext(undefined);
 

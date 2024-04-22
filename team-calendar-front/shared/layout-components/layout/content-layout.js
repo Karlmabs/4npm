@@ -1,12 +1,11 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, {Fragment, useEffect, useState} from "react";
 import Sidebar from "../sidebar/sidebar";
-import { Provider } from "react-redux";
+import {Provider} from "react-redux";
 import store from "@/shared/redux/store";
 import Header from "../header/header";
 import Footer from "../footer/footer";
 import Switcher from "../switcher/switcher";
 import Backtotop from "../backtotop/backtotop";
-import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const ContentLayout = ({ children }) => {
   const [lateLoad, setlateLoad] = useState(false);

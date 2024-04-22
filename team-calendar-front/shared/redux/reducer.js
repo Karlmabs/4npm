@@ -1,4 +1,4 @@
-import { Itemsdata1 } from "@/shared/data/ecommerces/ecommercedata";
+import {Itemsdata1} from "@/shared/data/ecommerces/ecommercedata";
 
 let initialState = {
   lang: "en",

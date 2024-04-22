@@ -1,6 +1,5 @@
-
-import { basePath } from "@/next.config";
-import { Html, Head, Main, NextScript } from "next/document";
+import {basePath} from "@/next.config";
+import {Head, Html, Main, NextScript} from "next/document";
 
 export default function Document() {
   return (
